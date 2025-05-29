@@ -26,8 +26,14 @@ html, body {
     background-color: #6e887fa9;
 }
 
+.carousel {
+  width: 500px;         /* Cambia el ancho */
+  height: 350px;        /* Cambia el alto */
+  margin: 0 auto;       /* Centra horizontalmente */
+}
+
 .carousel-item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  width: 100%;          /* Hace que la imagen se ajuste al ancho del carrusel */
+  height: 100%;         /* Ajusta la imagen al alto del carrusel */
+  object-fit: cover;    /* Corta y rellena para mantener proporciones sin deformar */
 }
