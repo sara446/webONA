@@ -1,39 +1,88 @@
-html, body {
-  height: 100%;
-  background-color: #d9eeba;
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d9eeba;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.navbar {
-    background-color: #85aa4c;
+.login-box {
+    background-color: #d9eeba;
+    border: 6px solid #689b4c;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    width: 1100px;
+    height: 450px ;
 }
 
-.icono-grande {
-    font-size: 2rem;
-    color: #5f805c;
-}
-
-.tipoLetraVar {
+.login-box h2 {
     font-family: 'Pacifico', cursive;
-    margin-bottom: 200px;
-    margin: 1rem;
+    margin-bottom: 30px;
+    color: #1e1e1e;
 }
 
-.offcanvas {
-    background-color: #6e887fa9;
+.login-box input {
+    display: block;
+    width: 500px;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: #5f805c;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 250px;
+    margin-bottom: 25px;
+
 }
 
-.carousel {
-  width: 500px;         /* Cambia el ancho */
-  height: 350px;        /* Cambia el alto */
-  margin: 0 auto;       /* Centra horizontalmente */
+.login-box input::placeholder {
+    color: white;
+    opacity: 0.9;
 }
 
-.carousel-item img {
-  width: 100%;          /* Hace que la imagen se ajuste al ancho del carrusel */
-  height: 100%;         /* Ajusta la imagen al alto del carrusel */
-  object-fit: cover;    /* Corta y rellena para mantener proporciones sin deformar */
+#lineR {
+    border: none;               /* Quita el borde predeterminado */
+    height: 5px;                /* Grosor de la línea */
+    background-color: #689b4c;  /* Color de la línea */
+    margin: 30px auto;          /* Espaciado vertical y centrado horizontal */
+    width: 60%;                 /* Ancho de la línea */
+    border-radius: 5px;         /* Bordes redondeados (opcional) */
+}
+
+
+.divider {
+    margin: 25px 0 15px;
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    color: #1e1e1e;
+    position: relative;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+}
+
+.facebook {
+    background-color: black !important;
 }
